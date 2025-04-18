@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import './Navbar.css';
 
 
 const Navbar = () => {
     const links = <>
-        <Link to='/' ><li className='hover:shadow-sm px-3 py-1 hover:bg-accent transition rounded-sm cursor-pointer'>Home</li></Link>
-        <Link to='/about' ><li className='hover:shadow-sm px-3 py-1 hover:bg-accent transition rounded-sm cursor-pointer'>About</li></Link>
-        <li className='hover:shadow-sm px-3 py-1 hover:bg-accent transition rounded-sm cursor-pointer'>Listed Book</li>
-        <li className='hover:shadow-sm px-3 py-1 hover:bg-accent transition rounded-sm cursor-pointer'>Pages to Read</li>
+        <NavLink to='/' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Home</li></NavLink>
+        <NavLink to='/listedbooks' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Listed Books</li></NavLink>
+        <NavLink to='/pagetoread' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Pages to Read</li></NavLink>
     </>
     return (
         <div>

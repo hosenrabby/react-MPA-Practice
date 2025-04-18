@@ -1,9 +1,13 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useLoaderData } from 'react-router';
 import Books from './Books';
 import HeroSec from '../../Header/HeroSec';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     const booksData = useLoaderData()
     return (
 
