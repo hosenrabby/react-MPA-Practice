@@ -8,7 +8,7 @@ const Books = ({ allBooks }) => {
         <div>
             <div className="card bg-base-100 shadow-sm border border-gray-200">
                 <figure className="px-6 pt-6">
-                    <img src={image} alt="Shoes" className="rounded-xl bg-gray-200" />
+                    <img src={image} alt="Shoes" className="rounded-xl bg-gray-200 h-[450px]" />
                 </figure>
                 <div className="card-body items-start text-center space-y-1.5">
                     <div className='space-x-2'>

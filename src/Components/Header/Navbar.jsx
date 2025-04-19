@@ -7,7 +7,7 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Home</li></NavLink>
         <NavLink to='/listedbooks' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Listed Books</li></NavLink>
-        <NavLink to='/pagetoread' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Pages to Read</li></NavLink>
+        <NavLink to='/booksinchart' ><li className='px-3 py-1 text-[#22be0ade] rounded-sm cursor-pointer'>Pages to Read</li></NavLink>
     </>
     return (
         <div>
@@ -23,7 +23,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="text-2xl Work-sans font-bold cursor-pointer">Book VIBE</a>
+                    <Link to={'/'}><a className="text-2xl Work-sans cursor-pointer">Book <span className='font-bold text-[#22be0ade]'>VIBE</span></a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu-horizontal px-1 gap-4">
@@ -31,8 +31,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end lg:space-x-1.5">
-                    <button className='btn bg-[#22be0ade] hover:bg-[#22be0a] text-white border border-[#23BE0A] rounded-md'>Sign In</button>
-                    <button className='btn btn-accent text-white rounded-md'>Sign Up</button>
+                    <button className='btn btn-sm lg:btn-md bg-[#22be0ade] hover:bg-[#22be0a] text-white border border-[#23BE0A] rounded-md'>Sign In</button>
+                    <button className='btn btn-sm lg:btn-md btn-accent text-white rounded-md'>Sign Up</button>
                 </div>
             </div>
         </div>

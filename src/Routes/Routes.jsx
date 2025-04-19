@@ -5,6 +5,7 @@ import Home from '../Components/Pages/Home/Home';
 import About from '../Components/Pages/About/About';
 import BookDetail from '../Components/Pages/BookDetails/BookDetail';
 import ListedBooks from '../Components/Pages/ListedBooks/ListedBooks';
+import BookChart from '../Components/Pages/BooksChart/BookChart';
 
 const Routes = createBrowserRouter([
     {
@@ -27,8 +28,9 @@ const Routes = createBrowserRouter([
                 Component: ListedBooks
             },
             {
-                path:'/about',
-                Component: About
+                path:'/booksinchart',
+                loader:() => fetch(`booksData.json`),
+                Component: BookChart
             }
         ]
     }
