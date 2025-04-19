@@ -3,9 +3,6 @@ import { useLoaderData } from 'react-router';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 const BookChart = () => {
     const books = useLoaderData()
-    console.log(books)
-
-
 
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', 'gray', 'blue', 'green'];
 

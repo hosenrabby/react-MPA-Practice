@@ -2,7 +2,6 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router';
 import Root from '../Components/Root/Root';
 import Home from '../Components/Pages/Home/Home';
-import About from '../Components/Pages/About/About';
 import BookDetail from '../Components/Pages/BookDetails/BookDetail';
 import ListedBooks from '../Components/Pages/ListedBooks/ListedBooks';
 import BookChart from '../Components/Pages/BooksChart/BookChart';

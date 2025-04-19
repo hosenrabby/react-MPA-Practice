@@ -23,7 +23,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to={'/'}><a className="text-2xl Work-sans cursor-pointer">Book <span className='font-bold text-[#22be0ade]'>VIBE</span></a></Link>
+                    <Link to={'/'}><span className="text-2xl Work-sans cursor-pointer">Book <span className='font-bold text-[#22be0ade]'>VIBE</span></span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu-horizontal px-1 gap-4">
